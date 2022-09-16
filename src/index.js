@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import helloWorld from './graphics.js';
 
+import "./main.css";
+
 function component() {
     const element = document.createElement('div');
   
