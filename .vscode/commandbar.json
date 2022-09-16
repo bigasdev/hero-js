@@ -1,0 +1,23 @@
+{
+	"skipTerminateQuickPick": true,
+	"skipSwitchToOutput": false,
+	"skipErrorMessage": true,
+	"commands": [
+		{
+			"text": "👁 Run HTML",
+			"color": "yellow",
+			"alignment": "right",
+			"command": "npx webpack serve",
+			"skipTerminateQuickPick": false,
+			"priority": 1
+		},
+		{
+			"text": "📦 Build",
+            "color": "yellow",
+			"alignment": "right",
+			"command": "npm run build",
+			"skipTerminateQuickPick": false,
+			"priority": 0
+		}
+	]
+}
