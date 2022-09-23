@@ -13,6 +13,16 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif|otf)$/,
+        use: {
+            loader: 'file-loader',
+            options: {
+                name: '[path][name].[ext]',
+                outputPath: 'path of output image directory'
+            }
+        }
+      }
     ],
   },
   devServer: {
@@ -21,5 +31,10 @@ module.exports = {
     },
     compress: true,
     port: 9000,
+  },
+  resolve: {
+    fallback: {
+        "fs": false
+    },
   }
 };
