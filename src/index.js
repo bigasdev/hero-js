@@ -18,7 +18,7 @@ function component() {
     //quick delay so we have time to load everything.
     setTimeout(()=>{
       start();
-    }, 10)
+    }, 100)
   
     return element;
   }

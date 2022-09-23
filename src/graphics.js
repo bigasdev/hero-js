@@ -6,6 +6,7 @@ import { getMiddleX, getMiddleY } from "./util";
 
 export default function start(){
     //setting the canvases;
+    console.log("started the graphics.js");
     setCanvas(0, document.getElementById('canvas'));
 
     createAsset(new Asset("logo", getMiddleX(getCanvas(0), -45), getMiddleY(getCanvas(0), -140), 3), getContext(0));
