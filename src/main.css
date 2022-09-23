@@ -1,9 +1,0 @@
-@font-face{
-    font-family: 'Monocraft';
-    src:url('/assets/fonts/Monocraft.otf') format('otf');
-        font-weight:600;
-}
-
-body{
-    font-family: "Monocraft";
-}
