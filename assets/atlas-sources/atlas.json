@@ -1,0 +1,29 @@
+{ "frames": {
+   "herojs.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 227, "h": 171 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 227, "h": 171 },
+    "sourceSize": { "w": 227, "h": 171 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.29-x64",
+  "image": "atlas.png",
+  "format": "RGBA8888",
+  "size": { "w": 227, "h": 171 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "hero", "opacity": 255, "blendMode": "normal" },
+   { "name": "effect", "opacity": 255, "blendMode": "normal" },
+   { "name": "font", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+   { "name": "logo", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 60, "y": 29, "w": 30, "h": 27 } }] }
+  ]
+ }
+}
