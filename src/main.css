@@ -16,4 +16,16 @@ body{
     position: absolute;
     text-align: center;
     position: relative;
+    display: grid;
+}
+button{
+    background-color: #525151;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: border .5s, background-color .2s, color .5s;
+}
+button:hover{
+    background-color: #1b1b1b;
+    color: rgb(172, 172, 172);
+    border: 1px solid rgb(187, 187, 187);
+    cursor: pointer;
 }
