@@ -4,11 +4,11 @@ import { createElement, createFragment } from "../global";
 /** @jsxFrag createFragment */
 
 function Hello(props){
-    return <div>Hello {props.name}</div>;
+    return <div class="castle">Hello {props.name} created with 🏰castle.jsx</div>;
 }
 
 function HelloWorld(){
-    return <Hello name="World" />;
+    return <Hello name="world" />;
 }
 
 export const initliazeCastle = () => {

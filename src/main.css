@@ -1,10 +1,19 @@
-@font-face{
-    font-family: 'Monocraft';
-    src:url('/assets/fonts/Monocraft.otf') format('otf');
-        font-weight:600;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 body{
-    font-family: "Monocraft";
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     background-color: #1b1b1b;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.castle{
+    color: rgb(172, 172, 172);
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    position: relative;
 }
