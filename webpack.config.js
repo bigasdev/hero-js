@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/hero.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'docs'),
@@ -12,6 +12,16 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.jsx/i,
+        exclude: /node_modules/i,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"]
+          }
+        }
       },
       {
         test: /\.(svg|png|jpg|jpeg|gif|otf)$/,

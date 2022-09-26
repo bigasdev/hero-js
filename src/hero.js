@@ -7,6 +7,8 @@ import _ from 'lodash';
 import { asepriteConfig } from './assets.js';
 import start from './graphics.js';
 
+import { initliazeCastle } from './components/castle.jsx';
+
 import "./main.css";
 
 function component() {
