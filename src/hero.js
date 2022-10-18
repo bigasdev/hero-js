@@ -10,6 +10,7 @@ import start from './graphics.js';
 import { initliazeCastle } from './components/castle.jsx';
 
 import "./main.css";
+import startPageQuery from './components/pageQuery.js';
 
 function component() {
     const element = document.createElement('div');
@@ -20,6 +21,7 @@ function component() {
     //quick delay so we have time to load everything.
     setTimeout(()=>{
       start();
+      startPageQuery();
     }, 100)
   
     return element;

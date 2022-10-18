@@ -44,7 +44,8 @@ module.exports = {
   },
   resolve: {
     fallback: {
-        "fs": false
+        "fs": false,
+        "url": require.resolve("url")
     },
   }
 };
