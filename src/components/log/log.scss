@@ -1,0 +1,63 @@
+#log {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+
+    button {
+        margin-top: 0.5rem;
+        position: relative;
+        display: inline-block;
+        border-radius: 8px;
+        background-color: rgb(254, 254, 252);
+        width: 2rem;
+        height: 2rem;
+
+        span {
+            position: absolute;
+            top: 25px;
+            right: -5px;
+            padding: 3px 3.5px;
+            border-radius: 50%;
+            text-align: center;
+            float: right;
+            margin-top: -2rem;
+            background-color: rgb(255, 67, 67);
+            width: 1rem;
+            height: 1rem;
+            font-size: 9px;
+            color: white;
+        }
+    }
+}
+.log-tab {
+    display: none;
+    top: -16rem;
+    left: -11rem;
+    height: 15rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+.log-block {
+    width: 12rem;
+    height: 2rem;
+    background-color: white;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+    outline: 2px solid gray;
+    color: rgb(87, 87, 87);
+}
+.log-block .type {
+    position: absolute;
+
+    left: 1.5rem;
+}
+.log .buttons {
+    display: grid;
+}

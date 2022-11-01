@@ -1,5 +1,5 @@
 /*components*/
-@import "./components/log//log.css";
+@import "./components/log//log.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css";
