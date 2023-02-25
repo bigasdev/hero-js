@@ -1,4 +1,6 @@
-import { createElement, createFragment } from "../global";
+import { clearAsset, getAsset, updateAsset } from "../assets";
+import { createElement, createFragment, getContext } from "../global";
+import { addEvent, startInput } from "../input";
 import { Log } from "./log/log.jsx";
 
 /** @jsx createElement */
@@ -28,6 +30,28 @@ export const initliazeCastle = () => {
     if (process.env.NODE_ENV === "development") {
         document.getElementById("main").appendChild(Log());
     }
+
+    startInput();
+    addEvent("a", ()=>{
+        clearAsset("logo", getContext(0));
+        getAsset("logo").dx -= 50;
+        updateAsset("logo", getContext(0));
+    })
+    addEvent("d", ()=>{
+        clearAsset("logo", getContext(0));
+        getAsset("logo").dx += 50;
+        updateAsset("logo", getContext(0));
+    })
+    addEvent("w", ()=>{
+        clearAsset("logo", getContext(0));
+        getAsset("logo").dy -= 50;
+        updateAsset("logo", getContext(0));
+    })
+    addEvent("s", ()=>{
+        clearAsset("logo", getContext(0));
+        getAsset("logo").dy += 50;
+        updateAsset("logo", getContext(0));
+    })
 
     document.getElementById("main").appendChild(HelloWorld());
     document

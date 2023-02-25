@@ -5,8 +5,12 @@ var atlas = [{
         name: "imageName",
         x: 0,
         y: 0,
+        dx: 0,
+        dy: 0,
         width: 16,
-        height: 16
+        height: 16,
+        dw: 48,
+        dh: 48
     }]
 }];
 
@@ -61,8 +65,36 @@ export const createAsset = (asset, ctx) =>{
     if(a){
         var w = a.width*asset.size;
         var h = a.height*asset.size;
+        a.dx = asset.x;
+        a.dy = asset.y;
+        a.dw = w;
+        a.dh = h;
         ctx.drawImage(atlas[a.atlas].src, a.x,a.y,a.width,a.height,asset.x,asset.y,w,h);
         asset.source = a;
     }
     return asset;
+}
+
+export const getAsset = (asset) =>{
+    var a = assetsMap.get(asset);
+    if(!a){
+        console.log("didnt find the asset you are looking for...");
+        return;
+    }
+    return a;
+}
+export const updateAsset = (asset, ctx) =>{
+    var a = assetsMap.get(asset);
+    if(!a){
+        console.log("didnt find the asset you are looking for...");
+        return;
+    }
+    console.log(a);
+    ctx.drawImage(atlas[a.atlas].src, a.x,a.y,a.width,a.height,a.dx,a.dy,a.dw,a.dh);
+}
+export const clearAsset = (asset,ctx) => {
+    var a = getAsset(asset);
+    if(a){
+        ctx.clearRect(a.dx,a.dy,a.dw,a.dh);
+    }
 }
